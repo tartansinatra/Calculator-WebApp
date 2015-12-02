@@ -1,0 +1,23 @@
+<form action='/calculate' method='get'>
+  <input type='text'  name='first' />
+  <input type='text'  name='operator' />
+  <input type='text'  name='second' />
+  <button>calculate!</button>
+</form>
+
+
+
+<% if @result %>
+<section>
+  <header>
+  <h1>Result</h1>
+  </header>
+  <p>The first number was: <%= @first %></p>
+  <p>The operator was: <%= @operator %></p>
+  <p>The second number was: <%= @second %>
+  <hr/>
+  <p>The result of <%= @first %> <%= @operator %> <%= @second %>
+  is <%= @result %> </p>
+</section>
+
+  <% end %>

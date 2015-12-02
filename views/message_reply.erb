@@ -1,0 +1,22 @@
+Please send us your feedback by completing this Contact Us form!
+
+
+<form action='/contact_us' method='get'>
+  Name: <input type='text'  name='name' />
+  Email: <input type='text'  name='email' />
+  Message: <input type='text'  name='message' />
+  <button>Send!</button>
+</form>
+
+<% if @reply %>
+<section>
+  <header>
+  <h1>Result</h1>
+  </header>
+  <p>Enter Name: <%= @first %></p>
+  <p>Email: <%= @operator %></p>
+  <p>Message: <%= @second %>
+  <hr/>
+  <p>Thanks for the message! 
+  is <%= @reply %> </p>
+</section>
